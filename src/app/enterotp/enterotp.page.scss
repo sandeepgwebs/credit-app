@@ -1,0 +1,14 @@
+.mobile-input{
+    form {
+        margin: 15px;
+    }
+    ion-button{
+        height: 33px;
+        text-transform: capitalize;
+        font-size: 17px;
+        border-radius: 33px;
+        --background: #fead18;
+        width: 100%;
+        transform: translatey(14px);
+      }
+    }

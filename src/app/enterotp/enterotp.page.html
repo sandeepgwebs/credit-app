@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>enterotp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mobile-input">
+      <img src="/assets/images/sticky-page-3-mobile.png">
+      <form [formGroup]="enterotpForm" (ngSubmit)="doEnterotp()">  
+        <ion-item>
+          <ion-input type="text" placeholder="name" formControlName="email"></ion-input>
+        </ion-item> 
+        <div class="error-container">
+          <ng-container *ngFor="let validation of validation_messages.email">
+            <div class="error-message" *ngIf="enterotpForm.get('email').hasError(validation.type) && (enterotpForm.get('email').dirty || enterotpForm.get('email').touched)">
+              <ion-icon name="information-circle-outline"></ion-icon>
+              <span>{{ validation.message }}</span>
+            </div>
+          </ng-container>
+        </div>
+          <div class="login-button">
+              <ion-button expand="full">submit</ion-button>
+          </div>
+      </form>
+
+      <form>   
+        <ion-item>
+            <ion-label position="stacked">enter your password</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <div class="login-button">
+            <ion-button expand="full">submit</ion-button>
+        </div>
+    </form>
+  </div>
+</ion-content>

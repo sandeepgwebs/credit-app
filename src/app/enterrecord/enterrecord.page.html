@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button>
+      <ion-icon name="arrow-round-back"></ion-icon>
+    </ion-menu-button>
+    <ion-title>enterrecord</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="entery">
+      <form>
+          <ion-item>
+              <ion-label position="stacked">credit Amount (<ion-icon name="logo-usd"></ion-icon>)</ion-label>
+              <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="stacked">Dabit Amount (<ion-icon name="logo-usd"></ion-icon>)</ion-label>
+              <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="stacked">Date</ion-label>
+              <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime><span class="calnder-icon"><ion-icon name="calendar"></ion-icon></span>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="stacked">Note</ion-label>
+              <ion-textarea placeholder="Enter your information here..."></ion-textarea>
+          </ion-item>
+
+          <div class="login-button">
+              <ion-button expand="defult" routerLink="/userhistory">save</ion-button>
+          </div>
+      </form>
+  </div>
+</ion-content>

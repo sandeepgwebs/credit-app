@@ -1,0 +1,68 @@
+.slider-images3,.slider-images2,.slider-images1{
+  height: 100%;
+  width: 100%;
+  // margin-top: 68px;
+  text-align: center;
+  padding: 120px 40px;
+}
+.slider-images3 h2,.slider-images2 h2,.slider-images1 h2{
+  font-size: 27px;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.slider-images3 p,.slider-images2 p,.slider-images1 p{
+  margin: 11px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 600;
+  text-align: left;
+}
+.swiper-pagination-bullet{
+  --opacity: 0.9;
+}
+.slider-images1{
+  padding: 74px 40px;
+}
+.slider-images3{
+  background: #EEF3FF;
+  height: 100vh;
+}
+.slider-images2{
+  background: #C1EBFF;
+  height: 100vh;
+}
+span.skip-page {
+  position: absolute;
+  right: 14px;
+  top: 20px;
+  color: #fead18;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+span.skip-page ion-icon{
+  font-size: 23px;
+  margin-top: 0;
+  transform: translatey(6px);
+  font-weight: bold;
+}
+.get-button{
+  ion-button{
+    height: 33px;
+    text-transform: capitalize;
+    font-size: 17px;
+    border-radius: 33px;
+    --background: #fead18;
+    width: 48%;
+    transform: translatey(14px);
+  }
+}
+.swiper-pagination{
+  .swiper-pagination-bullet { 
+    opacity: 0.9;
+  }
+}
+ 

@@ -1,0 +1,42 @@
+.circle-pic {
+    text-align: center;
+    padding: 40px 0 36px;
+    position: relative;
+    background: #fead18;
+}
+.circle-pic img {
+    height: 100px;
+    width: 100px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.circle-pic ion-icon{
+    top: 62%;
+    font-size: 32px;
+    left: 55%;
+    color: #000;
+    position: absolute;
+}
+form {
+    padding: 20px;
+}
+ion-item{
+    text-transform: capitalize;
+}
+.login-button ion-button {
+    margin: 22px 12px;
+    width: 110px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    --background: #fead18;
+    height: 48px;
+}
+ion-button{
+    --background-activated: transparent;
+}
+ion-header ion-button{
+    --background: transparent;
+    --background-activated: transparent;
+}

@@ -1,0 +1,54 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">  
+    <ion-slide>
+      <span class="skip-page"> <ion-icon name="return-right"></ion-icon></span> 
+      <div class="slider-images3">
+        <img src="/assets/images/coompanyprofile.png">
+        <h2>welcome!</h2>
+        <p> It was created by the <span>IonicThemes</span> team to help you jumpstart your ionicapp development</p> 
+        <p><span> you will love ionic 4, and if you get lost, 
+            remeber we have lots of tutorials to help you.</span> </p>
+      </div>
+    </ion-slide>
+      
+    <ion-slide>  
+      <span class="skip-page" routerLink="/login">skip <ion-icon name="return-right"></ion-icon></span> 
+      <div class="slider-images2">
+        <img src="/assets/images/sticky-page-3-mobile.png">
+        <h2>how to use app</h2>
+        <p> It was created by the <span>IonicThemes</span> team to help you jumpstart your ionicapp development</p> 
+        <p><span> you will love ionic 4, and if you get lost, 
+            remeber we have lots of tutorials to help you.</span> </p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <!-- <span class="skip-page">skip <ion-icon name="return-right"></ion-icon></span>  -->
+      <div class="slider-images1">
+        <img src="/assets/images/meeting-vector.png">
+        <h2>get ready !</h2>
+        <p> It was created by the <span>IonicThemes</span> team to help you jumpstart your ionicapp development</p> 
+        <p><span> you will love ionic 4, and if you get lost, 
+            remeber we have lots of tutorials to help you.</span> 
+        </p>
+        <div class="get-button">
+          <ion-button expand="default" routerLink="/login">login</ion-button>
+
+          <ion-button expand="default" routerLink="/signup">signup</ion-button> 
+        </div>
+      </div>
+    </ion-slide>
+     
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,48 @@
+ion-header{
+    ion-img{
+        height: 50px;
+        width: 50px;
+        float: left;
+        margin: 0 10px;
+    }
+
+    ion-button{
+        --background: transparent;
+    }
+
+    p {
+        font-size: 22px;
+        margin: 13px 0;
+    }
+    
+}
+.title ion-col{
+    font-weight: 800;
+    font-size: 18px;
+}
+table.title {
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 13px 0;
+}
+td.credit {
+    color: red;
+}
+td.debit {
+    color: green;
+}
+ion-fab-button{
+    --background: #fead18;
+    --background-activated: #fead18;
+}
+ion-tab-bar {
+    --background: #fead18;
+    padding: 2px 0px 5px 0px;
+}
+ion-tab-button{
+    color: #fff;
+}

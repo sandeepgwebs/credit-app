@@ -1,0 +1,36 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+ion-header{
+    ion-toolbar{
+        --background: #fead18;
+        padding: 11px 0;
+        color: #fff;
+    }
+    ion-title{
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 100;
+        margin: 5px 0;
+    }
+    ion-icon {
+        color: #fff;
+        font-size: 43px;
+        font-weight: bold;
+    }
+}

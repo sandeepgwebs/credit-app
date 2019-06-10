@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>sign up</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <div class="login-form">
+        <img src="/assets/images/sticky-page-3-mobile.png">
+        <form>
+            <ion-item>
+                <ion-label position="stacked">name</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="stacked">email</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+  
+            <ion-item>
+                <ion-label position="stacked">password</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+  
+            <div class="login-button">
+                <ion-button expand="full" routerLink="/userrecords">signup</ion-button>
+            </div>
+        </form>
+        <ion-item class="opction">
+          <ion-list><p>already have an account</p> <p class="signuptg" routerLink="/login">log in</p></ion-list>
+        </ion-item>
+        <span class="andor">or</span>
+        <div class="social-opction">
+           <p class="facbook"><ion-icon name="logo-facebook"></ion-icon></p>
+           <p class="google"><ion-icon name="logo-google"></ion-icon></p>
+           <p class="twitter"><ion-icon name="logo-twitter"></ion-icon></p>
+        </div>
+      </div>
+  </ion-content>
+  

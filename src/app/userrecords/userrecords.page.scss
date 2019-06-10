@@ -1,0 +1,24 @@
+.all-list{
+    ion-img{
+        width: 72px;
+        height: 60px;
+        float: left;
+        margin: 0 16px 0px 0px;
+    }
+    ion-label {
+        color: #fead18;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: capitalize;
+        transform: translatey(5px);
+        display: inline-block;
+    }
+    .right-bar ion-icon{
+        float: right;
+        font-size: 25px;
+    }
+}
+.my-fab ion-fab-button{
+    --background: #fead18;
+    --background-activated: #fead18; 
+}
