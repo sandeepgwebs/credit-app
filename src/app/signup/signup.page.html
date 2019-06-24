@@ -7,24 +7,27 @@
   <ion-content>
       <div class="login-form">
         <img src="/assets/images/sticky-page-3-mobile.png">
-        <form>
+        <form [formGroup]="rForm" class="ui form"  [class.error]="!rForm.valid && rForm.touched">
             <ion-item>
                 <ion-label position="stacked">name</ion-label>
-                <ion-input></ion-input>
+                <ion-input type="name" [formControl]="rForm.controls['name']" name="name"></ion-input>
+                <div *ngIf="rForm.controls['name'].hasError('required')  && rForm.controls['name'].touched">Name is required</div>
             </ion-item>
 
             <ion-item>
                 <ion-label position="stacked">email</ion-label>
-                <ion-input></ion-input>
+                <ion-input type="email" [formControl]="rForm.controls['email']" name="email"></ion-input>
+                <div *ngIf="rForm.controls['email'].hasError('required')  && rForm.controls['email'].touched">Email is required</div>
             </ion-item>
   
             <ion-item>
                 <ion-label position="stacked">password</ion-label>
-                <ion-input></ion-input>
+                <ion-input type="password" [formControl]="rForm.controls['password']" name="password"></ion-input>
+                <div *ngIf="rForm.controls['password'].hasError('required')  && rForm.controls['password'].touched">Password is required</div>
             </ion-item>
   
             <div class="login-button">
-                <ion-button expand="full" routerLink="/userrecords">signup</ion-button>
+                <ion-button type="submit" (click)="signup(rForm.value);" expand="full" >signup</ion-button>
             </div>
         </form>
         <ion-item class="opction">
